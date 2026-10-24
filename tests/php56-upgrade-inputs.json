@@ -1,0 +1,222 @@
+{
+  "baseline62": {
+    "php5.6-bcmath_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "92935ca3ddccbb06f7e3d092ccd0d37613ada371a5f21340701e04b1af74d4ea",
+      "size": 15736
+    },
+    "php5.6-cli_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "e91a25f03d1ff83a8103c23ed7fdf4aafce6edbc0442f5e7f9bd8eb4f83ebe6f",
+      "size": 1296748
+    },
+    "php5.6-common_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "f767e24f2ca3ef71ec9d8ef9407d178e4b8e12d8c59112a24cb846c1186a64cc",
+      "size": 732752
+    },
+    "php5.6-curl_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "366ef2fbdf93dd5da4cc46b8f59d2a1ffa7668c3cb81ee20717a2695966ecde0",
+      "size": 27820
+    },
+    "php5.6-dev_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "e662377f74d10c8f901c4d6136ffb200e173dfeef58bacf41a68b1c8f0cac4e3",
+      "size": 355340
+    },
+    "php5.6-fpm_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "edefa52b31c085716486aa9d4d1ec4cb902f3fe1cb9c49874de6088f8550a5f9",
+      "size": 1314308
+    },
+    "php5.6-gd_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "8d594cfe06e29bb87a15f54e0b0cb2044f00b2d5c81cb221e4be6a604c02e415",
+      "size": 29144
+    },
+    "php5.6-gmp_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "4bf44f6c5672374821bc564d37b66fa80d1edd6cd8a0f103895db29b62890624",
+      "size": 21912
+    },
+    "php5.6-imap_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "e960fd4036d34e972ac889b53cac664a3d04c2ce64a773b46db4742bf5b7ef2b",
+      "size": 33280
+    },
+    "php5.6-intl_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "07b689a7bc89876bc924bd5367252c8a76bf1524775a8a54acfa1bd72ca920cd",
+      "size": 114000
+    },
+    "php5.6-json_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "2077ecf7d2f4c62626dc9da7818cfaf939e8a170078b2ed9c8e14b4af0b626b6",
+      "size": 18104
+    },
+    "php5.6-mbstring_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "36f48474d999c920819ae2d0206c0d7387061cdfe958280a8b53c8f649e045ef",
+      "size": 465772
+    },
+    "php5.6-mcrypt_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "bb3772410aa51758ff46dd36deedb8516fd7419446dae7347ebc94fe942e1de0",
+      "size": 15804
+    },
+    "php5.6-mysql_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "3ec8fa56ee4d7e38b9284b747539ee5be4f35e865b07305088a2650309c92704",
+      "size": 142468
+    },
+    "php5.6-opcache_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "c44e6c8d5fa4774eed567786d990e570bdeee9064a45b94642bf71f8ce8df9cb",
+      "size": 63464
+    },
+    "php5.6-pgsql_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "63077eaf1ef84894dab95d107e46d3ea0a7cd821b7eb47c495d65fd2e62d1495",
+      "size": 58560
+    },
+    "php5.6-readline_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "ac82fa1632888c5b879565794ed3334aeb870e4fe993d17db244859902a9ba4b",
+      "size": 13196
+    },
+    "php5.6-soap_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "f59b780b03f729756b6ea6895c3ad5680466e52887e532adf3452bf3d4ebe792",
+      "size": 131020
+    },
+    "php5.6-sqlite3_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "424968fcfb14a6774b95355ee7e71de9a460ca86509a29e6b765f5e3ebd3d47c",
+      "size": 25404
+    },
+    "php5.6-xml_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "e612c006e33fa3bef9cb790440f74e918fb57c935a85fe2a06146bdd6ee63c11",
+      "size": 120020
+    },
+    "php5.6-zip_5.6.40-62+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "5449a8d1913c801d805b96d4d40ffa557db9e3e40bdfa11a2f5ce6de4f1df258",
+      "size": 20580
+    }
+  },
+  "baseline63": {
+    "php5.6-bcmath_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "39d476b51cbc2d05da7298b205f80578f65c247b47c8b265f9a7dd4cf1a910aa",
+      "size": 15748
+    },
+    "php5.6-cli_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "7bb0c17e5e69ae72c403b73b78dd018adbbd451cbc647d59dc9a2b7def28a114",
+      "size": 1297572
+    },
+    "php5.6-common_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "60a385ed47e53c0860747c9067f2b63efdd364e051a1b7d566f596017a776037",
+      "size": 733060
+    },
+    "php5.6-curl_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "d950773cfaa8d453a22ec9198540bde19b6a9f97c4f90d0ca4140b8f13c5ce79",
+      "size": 27672
+    },
+    "php5.6-dev_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "55e1bb6685d6ad743ad8279118bf023930188d772702a2d2e1bb3976e3cd5255",
+      "size": 355348
+    },
+    "php5.6-fpm_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "6165c0c0b7c1135d24b9c051ce63544d3349b308e142bd1e9a3f8dd61c53d4e4",
+      "size": 1315460
+    },
+    "php5.6-gd_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "75fa12575481673729429dd3ecb907586d7331fac86c8adf5d99c2cd9cad8fdb",
+      "size": 29196
+    },
+    "php5.6-gmp_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "527c35486bb10929cbfca12116fc0c75bd04bbb98ecd6e3501debaef918fddcc",
+      "size": 21944
+    },
+    "php5.6-imap_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "8019fbb2fa96b70c3bff2265198c6b2713de2c8ce815f4e57448bd4f016c3f87",
+      "size": 33320
+    },
+    "php5.6-intl_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "5b9b523db611ee18a5c1a7f4c90e96d37efd9b8ab8e1a29ab87af0014e2bb4f2",
+      "size": 114276
+    },
+    "php5.6-json_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "7e824776529af3bc14e9d0537a7b5cc9b62edd647e4a0f677c25f29fb54c7973",
+      "size": 18100
+    },
+    "php5.6-mbstring_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "305b851c391b650b4d80d0b0904bd50712b90923757c5893546035b91e78c313",
+      "size": 464892
+    },
+    "php5.6-mcrypt_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "027039b7a63d16aba7f5457f73928b4f4d9546d4d9917bdf1b509ed7c4eee0fd",
+      "size": 15808
+    },
+    "php5.6-mysql_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "9ca93a6653e9286351e5fc8256ddfd1396d39891d465e88f63ee6944c8cab8c4",
+      "size": 142332
+    },
+    "php5.6-opcache_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "cfcda8c38ff6943c2f116be8de7d9771f50ad92e0b1496ef50242557d071f1a7",
+      "size": 63556
+    },
+    "php5.6-pgsql_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "08e9e05561ddd70b82c49f6b817b806c9bf112a20ef3927f5ec02977118cc5fb",
+      "size": 58768
+    },
+    "php5.6-readline_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "37a39c1bdc7e85853c34e651799fb2a9e526e22e6e27ba90b86215ffed088e25",
+      "size": 13140
+    },
+    "php5.6-soap_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "ee1c0351157737e8438e965c14ae910e6dca5ca08b1f6707aee842b8d654a7e3",
+      "size": 131012
+    },
+    "php5.6-sqlite3_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "082fc78a4a13090828cd1974302876328456c22ccf9a425f77ead5a0e3abe81e",
+      "size": 25420
+    },
+    "php5.6-xml_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "56ad8455658a9161e663cb9a68d5e683078ed3f1c21ff072a1782c656b96a8a6",
+      "size": 119464
+    },
+    "php5.6-zip_5.6.40-63+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "beea6afa666725e4282462d418448ccc521d852695a0d2dadb4a1b73c5b2611d",
+      "size": 20516
+    }
+  },
+  "baseline-extensions": {
+    "php5.6-igbinary_3.2.6+2.0.8-6+ubuntu20.04.1+deb.sury.org+10_amd64.deb": {
+      "sha256": "4a89ebc884ec44854adbb42b9ae5f08c0d8224678852c34912301b796797a3bc",
+      "size": 28704
+    },
+    "php5.6-imagick_3.7.0-2+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "917b3a0f09763ae9097d800121e9144a289804396d2168a5fe3bbf0598053841",
+      "size": 100216
+    },
+    "php5.6-memcached_3.2.0+2.2.0-1+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "10d00f33353b8d4d0b470d1d1fc760455d29d61365e6833368dac858a469b33b",
+      "size": 38864
+    },
+    "php5.6-msgpack_0.5.7-1+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "d49ae2fdc14cda771e3f1186c9e63d34ba7bcb1319ae4d0ed316e8bb1057e6ed",
+      "size": 33996
+    },
+    "php5.6-redis_5.3.7+4.3.0-1+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "02fc8d24ba714adeae8f7d7e410d756f40b6c0966e7b13513ee27c0ceba3102b",
+      "size": 147716
+    }
+  },
+  "baseline-deps": {
+    "libpcre3_8.45-1+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "ca93918710824086de4bfc7d0e2ec082d8d626cb5d6e5008772649f39941f85b",
+      "size": 240464
+    },
+    "libzip4_1.7.3-1+ubuntu20.04.1+deb.sury.org+2_amd64.deb": {
+      "sha256": "31b2eb057656a36dda28c3a8bf86300eb622f99064b9317499f7bb00cae7496d",
+      "size": 55132
+    },
+    "libpcre3-dev_8.45-1+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "d4376ca3477a965f1a3f06a215126a05bc09fe23d466066e9a53ce0ceedfe84a",
+      "size": 552440
+    },
+    "libpcre16-3_8.45-1+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "157f2b5dda9da27a5efb505471e60b1b23be05ba6e9a6dd6f155b2f2bc9c354c",
+      "size": 157728
+    },
+    "libpcre32-3_8.45-1+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "910802b33cc0bab348cff81a88758349ddf330a45bdbdce597c65efbe6b9a402",
+      "size": 148452
+    },
+    "libpcrecpp0v5_8.45-1+ubuntu20.04.1+deb.sury.org+1_amd64.deb": {
+      "sha256": "95fb3e61b0569c81accb543f048b95f95805d6be8ee4d75f6dbacabc38600fac",
+      "size": 51056
+    }
+  }
+}

@@ -1,0 +1,52 @@
+name: Isolated PHP 5.6 upgrade and rollback
+on:
+  workflow_dispatch:
+    inputs:
+      build_run:
+        description: Reviewed same-repository PHP 5.6 build artifact run ID
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  upgrade-rollback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        revision: ['62', '63']
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          name: experimental-php56-focal-amd64
+          path: out56/candidate
+          run-id: ${{ inputs.build_run }}
+          github-token: ${{ github.token }}
+      - name: Download exact original packages
+        run: python3 tests/download56-upgrade-inputs.py
+      - name: Upgrade and roll back inside Focal amd64
+        shell: bash
+        env:
+          REVISION: ${{ matrix.revision }}
+        run: |
+          mkdir -p out56/result
+          docker run --name php56-upgrade --platform linux/amd64 \
+            -v "$PWD:/repo:ro" \
+            -v "$PWD/out56/baseline$REVISION:/old:ro" \
+            -v "$PWD/out56/baseline-extensions:/extensions:ro" \
+            -v "$PWD/out56/baseline-deps:/deps:ro" \
+            -v "$PWD/out56/candidate:/candidate:ro" \
+            -v "$PWD/out56/result:/out" \
+            ubuntu:20.04 bash /repo/test56-upgrade.sh 2>&1 | tee out56/run.log
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: php56-upgrade-rollback-${{ matrix.revision }}
+          path: |
+            out56/result/
+            out56/run.log
+          retention-days: 14

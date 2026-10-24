@@ -1,0 +1,51 @@
+name: Test existing PHP 5.6 Focal build artifacts
+on:
+  workflow_dispatch:
+    inputs:
+      build_run:
+        description: Same-repository build run containing the pinned package artifact
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  test-focal-amd64:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          name: experimental-php56-focal-amd64
+          path: out56
+          run-id: ${{ inputs.build_run }}
+          github-token: ${{ github.token }}
+      - name: Download pinned sources for matching regression tests
+        run: bash download56.sh
+      - name: Install and test existing packages in fresh Focal amd64
+        shell: bash
+        run: |
+          docker run --name php56-artifact-tests --platform linux/amd64 \
+            -v "$PWD:/repo:ro" -v "$PWD/sources56:/sources:ro" -v "$PWD/out56:/out" \
+            ubuntu:20.04 bash -c '
+              set -euo pipefail
+              export DEBIAN_FRONTEND=noninteractive
+              printf "#!/bin/sh\nexit 101\n" > /usr/sbin/policy-rc.d
+              chmod +x /usr/sbin/policy-rc.d
+              apt-get update
+              apt-get install -y --no-install-recommends dpkg-dev xz-utils patch python3
+              cd /out && sha256sum -c SHA256SUMS
+              cd /sources && sha256sum -c /repo/sources56.sha256
+              mkdir -p /build
+              dpkg-source --no-check -x /sources/*.dsc /build/php
+              bash /repo/test56-install.sh
+              PHP_TEST_BIN=/usr/bin/php5.6 bash /repo/test56-build.sh
+            ' 2>&1 | tee out56/artifact-test.log
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: php56-focal-artifact-test-results
+          path: out56/
+          retention-days: 14

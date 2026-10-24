@@ -1,0 +1,34 @@
+name: Experimental PHP 5.6 Focal build and regression tests
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: php56-focal-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  focal-amd64:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Download pinned Sury sources
+        run: bash download56.sh
+      - name: Build and test in isolated Ubuntu 20.04 amd64
+        shell: bash
+        run: |
+          mkdir -p out56
+          docker run --name php56-focal-build --platform linux/amd64 \
+            -v "$PWD:/repo:ro" -v "$PWD/sources56:/sources:ro" -v "$PWD/out56:/out" \
+            -e JOBS=4 ubuntu:20.04 bash -c 'bash /repo/build56.sh && bash /repo/test56-install.sh && bash /repo/test56-build.sh' \
+            2>&1 | tee out56/build.log
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: experimental-php56-focal-amd64
+          path: out56/
+          retention-days: 14
